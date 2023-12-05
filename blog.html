@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javaScript blog</title>
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <!-- tailwind css and daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    .font {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+  <body class="font">
+    <header class="flex justify-center items-center my-8">
+      <button class="btn btn-wide">
+        <a href="./index.html">Back to home</a>
+      </button>
+    </header>
+    <h1 class="text-2xl font font-bold text-center capitalize text-[#FF1F3D]">
+      JavaScript Blog post
+    </h1>
+
+    <main>
+      <section class="container m-auto">
+        <div class="join join-vertical w-full">
+          <div class="collapse collapse-arrow join-item border border-base-300">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-3xl font-medium">
+              Discuss the scope of <strong>var</strong>, <strong>let</strong>,
+              and <strong>const</strong> ?
+            </div>
+            <div class="collapse-content">
+              <br />
+              <p class="text-2xl">
+                <strong>Var :</strong>
+                var is not a block scope. That's mean if a variable declare in
+                var it can be access anywhere in code. That also mean if var use
+                for declaring a variable it become global scope
+              </p>
+
+              <br />
+              <p class="text-2xl">
+                <strong>Let :</strong>
+                let is a block scope. If a variable declare with let Keyword
+                inside a function that it become a block scope. It can not be
+                access outside this function That also mean. If a variable
+                declare with let in global it can be access anywhere in the code
+                also any where inside the function.
+              </p>
+
+              <br />
+              <p class="text-2xl">
+                <strong>Const :</strong>
+                Const is a highly strict reserve keyword in javascript for
+                declaring a variable. If you declare it it never in global not
+                inside of function then the variable name must by use as ones.
+                The same variable name not declare again anywhere in global. And
+                it also has a similar behavior like let
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border border-base-300">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-3xl font-medium">
+              Tell us the use cases of <strong>null</strong> and
+              <strong>undefined</strong> !
+            </div>
+            <div class="collapse-content">
+              <br />
+
+              <p class="text-2xl">
+                <strong>Null :</strong>
+                Null is a javascript primitive value the represents some absence
+                of a value. Or missing a value. Null is also represents an empty
+                object. and many more
+              </p>
+
+              <br />
+              <br />
+              <p class="text-2xl">
+                <strong>Undefined :</strong>
+                Undefined is a also a primitive value represents in javascript.
+                Behind the scene when javaScript engine catch all the function
+                and variable by default it set every function and variable
+                Undefined. when the code conditional come it replace the
+                Undefined and put there a condition or value.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border border-base-300">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              What do you mean by
+              <strong>REST API</strong> ?
+            </div>
+            <div class="collapse-content">
+              <br />
+              <br />
+              <p class="text-2xl">
+                <strong>REST API :</strong>
+                REST API full from is - Representational state transfer
+                application programming interface. An API, or application
+                programming interface. is set of rules and protocols that allows
+                us to communicate with different software application
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHero-tube</title>
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <!-- ! tailwind and daisyUi link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./main.js" defer></script>
+    <style>
+      .font {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font">
+    <nav class="lg:px-20">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li class="rounded-lg">
+                <a
+                  class="font text-[#252525] text-[18px] capitalize font-normal rounded-lg"
+                  id="sort-responsive"
+                  >Sort by views</a
+                >
+              </li>
+            </ul>
+          </div>
+          <img src="./Design in png//Logo.png" alt="" />
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="bg-[#25252533] rounded-lg">
+              <a
+                class="font text-[#252525] text-[18px] capitalize font-normal"
+                id="sort-button"
+                >sort by views</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a
+            class="font text-white bg-[#FF1F3D] py-2 px-4 rounded-lg cursor-pointer"
+            href="./blog.html"
+            >Blog</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section class="flex justify-center items-center my-20">
+      <div
+        class="grid grid-cols-2 md:grid md:grid-cols-2 lg:flex lg:flex-row lg:justify-center"
+        id="btn-container"
+      >
+        <!-- <button
+            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg text-[18px] font-normal hover:bg-[#FF1F3D] hover:text-[#ffffff] lg:mx-4 md:mx-4 md:my-4 m-2"
+          >
+            All
+          </button>
+          <button
+            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg text-[18px] font-normal hover:bg-[#FF1F3D] hover:text-[#ffffff] lg:mx-4 md:mx-4 md:my-4 m-2"
+          >
+            Music
+          </button>
+          <button
+            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg text-[18px] font-normal hover:bg-[#FF1F3D] hover:text-[#ffffff] lg:mx-4 md:mx-4 md:my-4 m-2"
+          >
+            Comedy
+          </button>
+          <button
+            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg text-[18px] font-normal hover:bg-[#FF1F3D] hover:text-[#ffffff] lg:mx-4 md:mx-4 md:my-4 m-2"
+          >
+            Drawing
+          </button> -->
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="ml-4 overflow-x-hidden flex flex-col justify-center items-center md:grid md:grid-cols-2 lg:flex lg:flex-row lg:flex-wrap lg:justify-center md:gap-4 lg:gap-10 gap-4"
+        id="card-container"
+      ></div>
+    </section>
+  </body>
+</html>
